@@ -20,6 +20,7 @@ Så börja med att planera ditt tema.
 -   Vilka uppgraderingar ska gå att köpa?
 -   Achievement eller milstolpar?
 
+
 När du har skrivit ned och bestämt detta så, skapa en logga, designa en knapp, planera spelets layout.
 Skissa med Figma om du vill. Men du ska skriva ned och anteckna.
 

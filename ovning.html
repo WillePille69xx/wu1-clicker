@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        button {
+            font-family: sans-serif;
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="clicker-button" type="button">Click here</button>
+    <p id="counter">clicks: 0</p>
+    <script>
+        let clicks = 0;
+        const button = document.querySelector("#clicker-button");
+        button.addEventListener("click", (event) => {
+            clicks += 1;
+            counter.textContent = `clicks: ${clicks}`; // clicks + amount of total clicks
+            console.log("Button clicked: ", clicks);
+        if (clicks > 10) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "red";
+        }    
+        if (clicks > 20) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "blue";
+        }    
+        if (clicks > 30) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "green";
+        }    
+        if (clicks > 40) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "orange";
+        }    
+        if (clicks > 50) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "purple";
+        }    
+        if (clicks > 60) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "pink";
+        }    
+        if (clicks > 70) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "tomato";
+            counter.style.color = "white";
+        }    
+        if (clicks > 80) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "lightblue";
+            counter.style.color = "white";
+        }    
+        if (clicks > 90) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "salmon";
+            counter.style.color = "white";
+        }    
+        if (clicks > 100) { // Set background color to red after 10 clicks
+            document.body.style.backgroundColor = "black";
+            counter.style.color = "white";
+        }    
+        });
+    </script>
+</body>
+</html>

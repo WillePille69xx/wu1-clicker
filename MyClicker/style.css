@@ -1,0 +1,453 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+}
+
+
+
+
+audio {
+    display: none;
+}
+
+
+
+.top {
+    background: url('img/Topprob.jpeg') no-repeat center center;
+    background-size: cover; /* Makes the image cover the entire .top container */
+    border: 2px solid #04ff4b;
+    position: relative;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    font-family: Orbitron;
+    border-radius: 8px;
+}
+
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    z-index: 0; /* Ensure overlay stays above the background but below text */
+    border-radius: 8px;
+}
+
+.top > * {
+    z-index: 2; /* Ensure content stays on top of overlay */
+}
+
+
+.top h3 {
+    margin: 0; /* Remove any default margin */
+}
+
+
+.top li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top h2, .top h3 {
+    margin: 0;
+    font-size: 20px; /* Adjust this to make it more balanced */
+}
+
+.top button {
+    background-color: #04ff4b;
+    color: #000000;
+    border:rgb(2, 202, 32) solid 2px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.top button:hover {
+    background-color: #04ff4b;
+    color: #000;
+    border: rgb(2, 202, 32) solid 2px;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.top button:active {
+    transform: scale(1);
+    background-color: #04ff4b;
+    color: #000;
+    border: rgb(2, 202, 32) solid 2px;
+    transition: transform 0.2s ease;
+
+}
+
+.Mutantchamber {
+    display: none;
+    background-color: rgba(41, 117, 4, 0.7);
+    background-size: cover;
+    border: 2px solid #04ff4b;
+    position: fixed;
+    color: #ffffff;
+    padding: 10px;
+    z-index: 2;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+}
+
+.MchamberContent {
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000; 
+}
+
+.MchamberContent {
+    position: absolute; 
+    right: 20px;
+    top: 10px;
+    z-index: 1001;
+}
+
+.MchamberContent button {
+    background-color: #04ff4b;
+    color: #000000;
+    border: rgb(2, 202, 32) solid 2px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    display: inline;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.MchamberContent button:hover {
+    background-color: #04ff4b;
+    color: #000;
+    border: rgb(2, 202, 32) solid 2px;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.MchamberContent button:active {
+    transform: scale(1);
+    background-color: #04ff4b;
+    color: #000;
+    border: rgb(2, 202, 32) solid 2px;
+    transition: transform 0.2s ease;
+}
+
+.close {
+    position: absolute; left: 1000px;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+.close:hover, .close:focus {
+    color: #f1c40f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#money, #mps, #mpc {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.mainContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80vh; /* Adjusted height */
+    padding: 10px;
+    position: relative; /* Ensure the mainContent is the reference point for absolute positioning */
+}
+
+.mainContent {
+    background-image: url('img/MMCBackground.jpeg');
+    background-size: cover;  /* Make sure the background covers the container */
+    background-position: calc(50% - 185px) calc(50% - 60px); /* Shift background slightly to the left */
+  }
+  
+
+.mainClicker {
+    display: flex;
+    justify-content: center; /* Horizontally centers the button */
+    align-items: center; /* Vertically centers the button */
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet 0;
+    position: absolute; /* Remove the flex context for this */
+    left: 25%; /* This adjusts the button to be towards the center horizontally */
+    top: 50%; /* Center vertically within the screen */
+    transform: translateY(-50%); /* Fine-tunes the vertical center */
+}
+
+
+
+
+
+.upgrades-container {
+    background: rgba(0, 0, 0, 0.5); /* Dark with 70% opacity */
+    width: 300px; /* Fixed width */
+    height: 80vh; /* Limit the height to 60% of the viewport height */
+    overflow-y: auto; /* Only vertical scrolling */
+    margin-left: auto; /* Pushes the container to the right */
+    padding-left: 10px; /* adds spacing on the right */
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: solid rgb(2, 202, 32)
+}
+
+.mainContent, .upgradeContainer {
+    margin: 0;
+    padding: 0;
+}
+
+
+#game-button {
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    font-size: var(--step-2);
+    background: url('img/DNA-VIAL.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#game-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#game-button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+
+.card {
+    background: url('img/Topprob.jpeg');
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+.card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(12, 248, 0, 0.5); /* Dark transparent overlay */
+    z-index: 0; /* Ensure overlay stays above the background but below text */
+}
+
+.card > * {
+    z-index: 2; /* Ensure content stays on top of overlay */
+}
+
+.card p {
+    margin: 0;
+    color: #ffffff
+}
+
+.card .title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card .cost {
+    color: #555;
+    font-size: 14px;
+}
+
+.btn-upgrade {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-upgrade:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05); /* Slightly grows when hovered */
+}
+
+.btn-upgrade:active {
+    background-color: #388e3c; /* Even darker green */
+    transform: scale(1);
+}
+
+
+
+#msgbox {
+    position: fixed;
+    bottom: 20px; /* Position it at the bottom */
+    left: -300px; /* Initially off-screen to the left */
+    width: 300px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#msgbox.active {
+    left: 20px; /* Slide in from the left */
+    opacity: 1; /* Make it visible */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+    100% {
+        left: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        left: 20px;
+        opacity: 1;
+    }
+    100% {
+        left: -300px;
+        opacity: 0;
+    }
+}
+
+.success {
+    background-color: #28a745; /* Green */
+}
+
+.warning {
+    background-color: #ff9800; /* Orange */
+}
+
+.achievement {
+    background-color: #007bff; /* Blue */
+    animation: pulse 1s infinite; /* Make the achievement pulse */
+    border: 3px solid #ffffff; /* Add a white border */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Add a glowing effect */
+}
+
+.achievement p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.achievement .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('img/Achivement.png'); /* Replace with your icon */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1.2;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+p {
+    opacity: 1;
+    animation: fadeIn 0.3s forwards; /* Fade in message */
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #game-button {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutant Mayhem clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+<body>
+    <audio id="swoosh" src="audio/607251__d4xx__swoosh-2.wav"></audio>
+    <div class="top">
+        <h3>Mutant <br> Mayhem <br> Clicker</h3>
+        <li class="item">
+            <h2>DNA: <span id="money"></span></h2>
+        </li>
+        <li class="item">
+            <h3>DNA per Click: <span id="mpc"></span></h3>
+        </li>
+        <li class="item">
+            <h3>DNA per Second: <span id="mps"></span></h3>
+        </li>
+        <li class="item">
+            <h3>Tot upgrades: <span id="upgrades"></span></h3>
+        </li>
+        <li class="button">
+            <button id="mChamberBtn">Mutant Chamber</button>
+        </li>
+    </div>
+    
+    <div class="Mutantchamber" id="Mchamber">
+        <div class="MchamberContent">
+            <span class="close">&times;</span>
+            <h2>Mutant Chamber</h2>
+            <div class="MchamberText">
+                <p>Welcome to the Mutant Chamber! Here You can create Mutants and upgrade them to make them stronger!<br> <br> You can also Mutate your own DNA to reset and get special benefits!</p>
+                <p>Click on the button below to create a new mutant!</p>
+                <button id="createMutant">Create Mutant</button>
+            </div>
+        </div>
+       
+
+    </div>
+    <div class="mainContent">
+        <!-- <div class="clickerBackground"> -->
+            <div class="mainClicker">
+                <button id="game-button"></button> 
+            </div>
+        <!-- </div> -->
+        <div class="upgrades-container">
+            <div id="upgradelist"></div>
+        </div>
+    </div>
+    <div id="msgbox"></div>
+    <script src="clicker.js"></script>
+    <script src="mChamber.js"></script>
+</body>
+</html>
