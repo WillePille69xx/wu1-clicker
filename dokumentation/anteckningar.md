@@ -5,4 +5,7 @@ After planning and answering the questions in Answerme.md (the README document),
 It was also quite difficult to create and find good AI-generated images, and then edit them in Photoshop and align them in a way that actually looked good on the page.
 
 # 3. 
-I’ve now spent quite a lot of time working on the Mutant Chamber (still a WIP), and it’s been pretty challenging too.
+I’ve now spent quite a lot of time working on the Mutant Chamber (still a WIP), and it’s been pretty challenging too. Might not finnish it, I mean it *alot* of extra work.
+
+# 4.
+Since i didn't have enough time i couldn't finnish alot of what i wanted to do. 
